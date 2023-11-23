@@ -39,11 +39,10 @@ const fetchDetailsData = async (
         return response.json();
       })
       .then((data) => {
-        var xAxis = data.data.forEach((item) => item.date);
-        var yAxis = data.data.forEach((item) => item.exchangeRate);
+        var xAxis = data.data.map((item) => item.date);
+        var yAxis = data.data.map((item) => item.exchangeRate);
         const axes = { xAxis, yAxis };
-        console.log(axes);
-        console.log(data.data);
+        return axes;
       })
       .catch((error) => {
         console.error("There was a problem with the fetch operation:", error);
@@ -218,12 +217,27 @@ const App = () => {
             </div>
           </div>
           <div className="currencies1">
-            <button onClick={fetchDetailsData}>Get Details</button>
+            <button
+              onClick={async () => {
+                const { xAxis1, yAxis1 } = await fetchDetailsData(
+                  firstCurrency,
+                  secondCurrency,
+                  startDate,
+                  endDate
+                );
+                setXAxis(xAxis1);
+                console.log(xAxis1);
+                setYAxis(yAxis1);
+                console.log(yAxis1);
+              }}
+            >
+              Get Details
+            </button>
           </div>
           <p>Exchange Rate Chart Placeholder</p>
           <CurrencyChart
-            labels={chartData.labels}
-            data={chartData.data}
+            labels={xAxis}
+            data={yAxis}
             currencyName={secondCurrency}
             startDate={startDate}
             endDate={endDate}
