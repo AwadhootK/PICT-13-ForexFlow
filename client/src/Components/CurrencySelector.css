@@ -1,0 +1,40 @@
+
+.currency-form {
+  display: flex;
+  align-items: center;
+}
+
+.currency-form label {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif; 
+}
+
+.currency-form select {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added outline transition */
+  padding: 8px; /* Added padding for better spacing */
+}
+
+.currency-form select:hover,
+.currency-form select:focus {
+  border-color: #b7ffb9;
+  box-shadow: 0 0 5px #b7ffb9; 
+}
+
+.currency-form select option {
+  font-size: 14px; /* Improved font size for options */
+  padding: 8px; /* Added padding for better spacing */
+  background-color: #fff; /* Set background color for options */
+  color: #333; /* Set text color for options */
+}
+
+.currency-container {
+  margin-bottom: 20px;
+}

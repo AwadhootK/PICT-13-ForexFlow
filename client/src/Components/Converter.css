@@ -1,0 +1,124 @@
+/* Container Styles */
+.convertor_grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.convertor_grid h2 {
+  font-weight: 700;
+  color: #4ECCA3; /* Reddish color */
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Label Styles */
+label {
+  font-weight: 700;
+  color: #fefefe; /* Dark gray color */
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Input Styles */
+.convertor_form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #ffffff; /* Dark gray color */
+  font-size: 18px;
+  width: 60%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #333; /* Dark gray border color */
+  outline: none;
+}
+
+.convertor_form input:focus {
+  border-bottom: 2px solid #02ad38; /* Green border color on focus */
+}
+
+/* Dropdown Styles */
+
+/* Button Styles */
+.convert_button button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4ECCA3;
+  border: 2px solid #4ECCA3;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+.convert_button button:hover {
+  background-color: #028c31; /* Darker green on hover */
+  border: 2px solid #028c31; /* Darker green border on hover */
+}
+
+/* Result Text Styles */
+.rate_exchange {
+  font-weight: 700;
+  color: #333; /* Dark gray color */
+  font-size: 18px;
+  margin-top: 20px;
+}
+.convertor_grid select {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+  padding: 8px; 
+}
+
+.convertor_grid select:hover,
+.convertor_grid select:focus {
+  border-color: #4caf50; 
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.7); /* Add a subtle box-shadow on hover/focus */
+}
+
+.convertor_grid select option {
+  font-size: 14px; /* Improved font size for options */
+  padding: 8px; /* Added padding for better spacing */
+  background-color: #fff; /* Set background color for options */
+  color: #333; /* Set text color for options */
+}
+.extra_buttons
+{
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+.extra_buttons button
+{
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 10px;
+  width: 200px;
+}
+.logo_div img {
+  height: 230px;
+  width: 100%;
+}
