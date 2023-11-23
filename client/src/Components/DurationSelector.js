@@ -5,6 +5,10 @@ const DurationSelector = ({
   durations,
   onSelectDuration,
   selectedDuration,
+  startDate,
+  endDate,
+  onStartDateChange,
+  onEndDateChange,
 }) => {
   return (
     <div className="duration-selector-container">
@@ -23,6 +27,18 @@ const DurationSelector = ({
           </option>
         ))}
       </select>
+      <input
+        type="date"
+        value={startDate}
+        onChange={(e) => onStartDateChange(e.target.value)}
+        placeholder="Start Date"
+      />
+      <input
+        type="date"
+        value={endDate}
+        onChange={(e) => onEndDateChange(e.target.value)}
+        placeholder="End Date"
+      />
     </div>
   );
 };
